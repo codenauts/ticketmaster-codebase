@@ -5,11 +5,11 @@ require 'active_resource'
 module CodebaseAPI
   class Error < StandardError; end
   class << self
-    def authenticate(username, password)
+    def authenticate(username, token)
       @username = username
-      @password = password
+      @password = token
       self::Base.user = username
-      self::Base.password = password
+      self::Base.password = token
     end
 
     def resources
@@ -29,6 +29,6 @@ module CodebaseAPI
   end
 
   class Ticket < Base
-    self.site += '/:project_id/tickets'
+    self.site += '/:project'
   end
 end
