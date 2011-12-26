@@ -7,6 +7,10 @@ module TicketMaster::Provider
         self.summary
       end
       
+      def id
+        ticket_id
+      end
+      
       def comments(*options)
         begin
           if options.empty?
