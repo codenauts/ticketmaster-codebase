@@ -31,4 +31,13 @@ module CodebaseAPI
   class Ticket < Base
     self.site += '/:project'
   end
+
+  class Comment < Base
+    self.element_name = "ticket_note"
+    self.site += '/:project/tickets/:ticket_id'
+    
+    def self.collection_name
+      "notes"
+    end
+  end
 end
