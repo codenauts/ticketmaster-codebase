@@ -2,6 +2,10 @@ module TicketMaster::Provider
   module Codebase
     class Project < TicketMaster::Provider::Base::Project
       API = CodebaseAPI::Project
+
+      def id
+        permalink
+      end
       
       def tickets(*options)
         begin
