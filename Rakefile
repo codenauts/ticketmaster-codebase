@@ -7,7 +7,7 @@ begin
     gem.summary = %Q{The codebase provider for ticketmaster}
     gem.description = %Q{This provides an interface with codebase through the ticketmaster gem.}
     gem.email = "thomas@dohmke.de"
-    gem.homepage = "http://github.com/codenauts/ticketmaster-codebase"
+    gem.homepage = "https://github.com/codenauts/ticketmaster-codebase"
     gem.authors = ["Codenauts"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
   end

@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
     "pkg/ticketmaster-codebase-.gem",
     "ticketmaster-codebase.gemspec"
   ]
-  s.homepage = %q{http://github.com/codenauts/ticketmaster-codebase}
+  s.homepage = %q{https://github.com/codenauts/ticketmaster-codebase}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
   s.summary = %q{The codebase provider for ticketmaster}
