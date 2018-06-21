@@ -18,7 +18,7 @@ module CodebaseAPI
   end
   
   class Base < ActiveResource::Base
-    self.site = "http://api3.codebasehq.com"
+    self.site = "https://api3.codebasehq.com"
     def self.inherited(base)
       CodebaseAPI.resources << base
       super
